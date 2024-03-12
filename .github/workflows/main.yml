@@ -1,0 +1,13 @@
+name: A Demo 2  Workflow
+on: push
+jobs:
+  build-myjobs:
+    name: Hello World Actions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        name: Checkout Code
+      - name: Echo Hello World
+        run: echo Hello World
+      - name: index.html content
+        run: cat index.html
