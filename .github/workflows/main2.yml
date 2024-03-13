@@ -1,5 +1,6 @@
 name: A Demo 3  Workflow
-on: push
+on: 
+  workflow_dispatch:
 jobs:
   build-myjobs:
     name: Hello World Actions
