@@ -1,0 +1,17 @@
+name: Varaibles Demo Wrokflow
+on: 
+  workflow_dispatch:
+env:
+    DAY_OF_WEEK: Wednesday   
+jobs:
+  example-jobs:
+    name: Variables Demo Job
+    runs-on: ubuntu-latest
+    env:
+     Greeting: Hello        
+    steps:
+      - name: Print value of Varibles 
+        run: |
+         echo "Value of Greetings is :${{ env.Greeting }}"
+         echo "Value of Greetings is :$ Greeting"
+         echo "Value of Day of Week  is :${{ env.DAY_OF_WEEK }}"   
