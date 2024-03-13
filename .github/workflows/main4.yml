@@ -15,3 +15,4 @@ jobs:
          echo "Value of Greetings is :${{ env.Greeting }}"
          echo "Value of Greetings is :$Greeting"
          echo "Value of Day of Week  is :${{ env.DAY_OF_WEEK }}"   
+         echo "Repo Varaible  is :${{ vars.DEMO1 }}"            
